@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+	<title></title>
+	<script src= "{% static "js/angular.min.js" %}"></script>
+	<script src= "{% static "js/controlles.js" %}"></script>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="customersCtrl">
+		<ul>
+			<li ng-repeat="item in posts">
+				<h1>{{item.first_name}}</h1>
+      			<h1>{{item.last_name}}</h1>
+      		</li>
+      	</ul>
+      	<h1>lista</h1>
+	</div>
+	
+</body>
+</html>
