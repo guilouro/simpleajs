@@ -7,15 +7,15 @@
 	<script src= "{% static "js/controlles.js" %}"></script>
 </head>
 <body ng-app="myApp">
-	<div ng-controller="customersCtrl">
-		<ul>
-			<li ng-repeat="item in posts">
-				<h1>{{item.first_name}}</h1>
-      			<h1>{{item.last_name}}</h1>
-      		</li>
-      	</ul>
-      	<h1>lista</h1>
+    <div ng-controller="customersCtrl">
+        <h1>Lista</h1>
+        <hr>
+        <ol>
+            <li ng-repeat="item in posts">
+                <h3>{$item.fields.first_name$} {$item.fields.last_name$}</h3>
+            </li>
+        </ol>
 	</div>
-	
+
 </body>
 </html>
